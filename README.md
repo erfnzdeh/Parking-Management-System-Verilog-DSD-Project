@@ -1,5 +1,3 @@
-# Task
-
 ---
 
 Design a circuit for university parking management that has the following capabilities:
