@@ -1,0 +1,20 @@
+Fitter Status : Successful - Wed Jun 26 15:54:19 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : Parking
+Top-level Entity Name : parking_management_system
+Family : Cyclone IV GX
+Device : EP4CGX22CF19C6
+Timing Models : Final
+Total logic elements : 150 / 21,280 ( < 1 % )
+    Total combinational functions : 146 / 21,280 ( < 1 % )
+    Dedicated logic registers : 86 / 21,280 ( < 1 % )
+Total registers : 86
+Total pins : 48 / 167 ( 29 % )
+Total virtual pins : 0
+Total memory bits : 0 / 774,144 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 80 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 4 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 4 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

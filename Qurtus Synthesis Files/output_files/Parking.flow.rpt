@@ -1,0 +1,130 @@
+Flow report for Parking
+Wed Jun 26 15:54:34 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Wed Jun 26 15:54:34 2024      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; Parking                                    ;
+; Top-level Entity Name              ; parking_management_system                  ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 150 / 21,280 ( < 1 % )                     ;
+;     Total combinational functions  ; 146 / 21,280 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 86 / 21,280 ( < 1 % )                      ;
+; Total registers                    ; 86                                         ;
+; Total pins                         ; 48 / 167 ( 29 % )                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 774,144 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 80 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                              ;
+; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                              ;
+; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                              ;
+; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
+; Device                             ; EP4CGX22CF19C6                             ;
+; Timing Models                      ; Final                                      ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/26/2024 15:53:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Parking             ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                   ;
++-------------------------------------+---------------------------------+---------------+---------------------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name               ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+---------------------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 159327868133196.171940463523340 ; --            ; --                        ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --                        ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --                        ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; parking_management_system ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; parking_management_system ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; parking_management_system ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --                        ; --             ;
+; TOP_LEVEL_ENTITY                    ; parking_management_system       ; Parking       ; --                        ; --             ;
++-------------------------------------+---------------------------------+---------------+---------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4667 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:20     ; 1.0                     ; 5061 MB             ; 00:00:11                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4640 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4643 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4594 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:18                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-286TJ32  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-286TJ32  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-286TJ32  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-286TJ32  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-286TJ32  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Parking -c Parking
+quartus_fit --read_settings_files=off --write_settings_files=off Parking -c Parking
+quartus_asm --read_settings_files=off --write_settings_files=off Parking -c Parking
+quartus_sta Parking -c Parking
+quartus_eda --read_settings_files=off --write_settings_files=off Parking -c Parking
+
+
+
