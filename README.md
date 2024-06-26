@@ -8,6 +8,8 @@
 
 This project is part of the Digital System Design course under the supervision of Dr. Foshati. It aims to design and implement a robust university parking management system, providing efficient and real-time monitoring of parking spaces. This system distinguishes between university-affiliated and non-university vehicles, ensuring optimal use of the available parking capacity. The project is developed using Verilog and implemented on an FPGA to leverage its high performance and reliability in managing digital circuits.
 
+[برای خواندن گزارش فارسی کلیک کنید.](https://github.com/erfnzdeh/DSD-Project/blob/main/Report_Persian_DSD_Project_401011180.pdf)
+
 ### Features
 
 - **Capacity Management**: The parking lot has a total capacity of 700 cars.
