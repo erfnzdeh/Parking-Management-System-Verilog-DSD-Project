@@ -12,6 +12,8 @@ module TB_parking_management_system;
     wire uni_is_vacated_space;
     wire is_vacated_space;
 
+    integer outfile;
+
     parking_management_system uut (
         .clk(clk), 
         .reset(reset), 
@@ -36,7 +38,7 @@ module TB_parking_management_system;
 
     task display_state;
         begin
-            $display("Time: %0t\nNumber of university cars currently parked: %d\nNumber of non-university cars currently parked: %d\nNumber of vacated spaces reserved for university cars: %d\nNumber of vacated spaces for non-university cars: %d\nIs there a vacated space for university cars? %s\nIs there a vacated space for non-university cars? %s\n", 
+            $fwrite(outfile, "Time: %0t\nNumber of university cars currently parked: %d\nNumber of non-university cars currently parked: %d\nNumber of vacated spaces reserved for university cars: %d\nNumber of vacated spaces for non-university cars: %d\nIs there a vacated space for university cars? %s\nIs there a vacated space for non-university cars? %s\n", 
                      $time, uni_parked_car, parked_car, uni_vacated_space, vacated_space, 
                      uni_is_vacated_space ? "yes" : "no", 
                      is_vacated_space ? "yes" : "no");
@@ -70,6 +72,8 @@ module TB_parking_management_system;
     endtask
 
     initial begin
+        outfile = $fopen("output_results.txt", "w");
+
         clk = 0;
         reset = 0;
         car_entered = 0;
@@ -77,33 +81,65 @@ module TB_parking_management_system;
         is_uni_car_entered = 0;
         is_uni_car_exited = 0;
 
-        $display("Resetting the system...\n");
+        $fwrite(outfile, "Resetting the system...\n");
         reset = 1;
         #DELAY;
         reset = 0;
         #DELAY;
 
-        $display("Test Case 1: Uni Car Enters");
+        // Test normal operations
+        $fwrite(outfile, "Event 1: Uni Car Enters");
         car_enter(1);
 
-        $display("Test Case 2: Another Uni Car Enters");
+        $fwrite(outfile, "Event 2: Another Uni Car Enters");
         car_enter(1);
 
-        $display("Test Case 3: Non-Uni Car Enters");
+        $fwrite(outfile, "Event 3: Non-Uni Car Enters");
         car_enter(0);
 
-        $display("Test Case 4: Non-Uni Car Exits");
+        $fwrite(outfile, "Event 4: Non-Uni Car Exits");
         car_exit(0);
 
-        $display("Test Case 5: Uni Car Exits");
+        $fwrite(outfile, "Event 5: Uni Car Exits");
         car_exit(1);
 
-        $display("Test Case 6: Non-Uni Car Enters Again");
+        $fwrite(outfile, "Event 6: Non-Uni Car Enters Again");
         car_enter(0);
 
-        #6000000; 
-        $display("Test Case 7: Non-Uni Car Enters After Long Delay");
+        #6000000;
+        $fwrite(outfile, "Event 7: Non-Uni Car Enters After Long Delay");
         car_enter(0);
+
+        // Test edge cases
+        $fwrite(outfile, "Event 8: Fill up university parking spaces");
+        repeat (500) begin
+            car_enter(1);
+        end
+
+        $fwrite(outfile, "Event 9: Fill up non-university parking spaces");
+        repeat (200) begin
+            car_enter(0);
+        end
+
+        $fwrite(outfile, "Event 10: Attempt to park another university car (should fail)");
+        car_enter(1);
+
+        $fwrite(outfile, "Event 11: Attempt to park another non-university car (should fail)");
+        car_enter(0);
+
+        $fwrite(outfile, "Event 12: Exit a university car");
+        car_exit(1);
+
+        $fwrite(outfile, "Event 13: Exit a non-university car");
+        car_exit(0);
+
+        $fwrite(outfile, "Event 14: Park a university car after space is vacated");
+        car_enter(1);
+
+        $fwrite(outfile, "Event 15: Park a non-university car after space is vacated");
+        car_enter(0);
+
+        $fclose(outfile);
 
         $finish;
     end
