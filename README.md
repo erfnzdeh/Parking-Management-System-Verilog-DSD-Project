@@ -30,7 +30,9 @@ Sure, here's a sample `README.md` for your university project:
 
 # University Parking Management System
 
-![alt text](https://media.shahr.ir/d/2021/11/27/3/21194.jpg)
+<!-- ![alt text](https://media.shahr.ir/d/2021/11/27/3/21194.jpg) -->
+
+![alt text](https://media.hamshahrionline.ir/d/2022/08/17/4/4718571.jpg?ts=1660714779000)
 
 ### Project Overview
 
