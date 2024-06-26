@@ -1,0 +1,81 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Px/Documents/DSD_HW4
+vparking_management_system
+Z0 !s110 1719391739
+!i10b 1
+!s100 33PfI2jE_LcR2W2gHQ_4_0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IS:l^X8;[[1Q?5K?59UoGa0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Px/Documents/GitHub/DSD-Project
+w1719391337
+8C:/Users/Px/Documents/GitHub/DSD-Project/module.v
+FC:/Users/Px/Documents/GitHub/DSD-Project/module.v
+!i122 8
+L0 1 107
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1719391739.000000
+!s107 C:/Users/Px/Documents/GitHub/DSD-Project/module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Px/Documents/GitHub/DSD-Project/module.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vparking_management_system_tb
+!s110 1719390300
+!i10b 1
+!s100 9n@ER:ezZiZA=U8BN>g9c0
+R1
+IV5N3[ERUXJmmLVM:NcdB20
+R2
+R3
+w1719385157
+Z8 8C:/Users/Px/Documents/GitHub/DSD-Project/TB.v
+Z9 FC:/Users/Px/Documents/GitHub/DSD-Project/TB.v
+!i122 3
+L0 1 116
+R4
+r1
+!s85 0
+31
+!s108 1719390300.000000
+!s107 C:/Users/Px/Documents/GitHub/DSD-Project/TB.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Px/Documents/GitHub/DSD-Project/TB.v|
+!i113 1
+R6
+R7
+vTB_parking_management_system
+R0
+!i10b 1
+!s100 KFX;WjN;f2j_BP:D8EjDc1
+R1
+IjV@@OakzZmQ`?9M3g@f?P2
+R2
+R3
+w1719391721
+R8
+R9
+!i122 9
+L0 1 114
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 C:/Users/Px/Documents/GitHub/DSD-Project/TB.v|
+R10
+!i113 1
+R6
+R7
+n@t@b_parking_management_system
