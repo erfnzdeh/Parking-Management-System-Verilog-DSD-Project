@@ -31,12 +31,6 @@ To run the system on an FPGA:
 
 The system effectively manages parking by accurately tracking the number of cars parked and vacated.
 
-## Related Links
-
-- [Verilog HDL](https://en.wikipedia.org/wiki/Verilog)
-- [ModelSim](https://www.mentor.com/products/fv/modelsim/)
-- [Intel Quartus Prime](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html)
-
 ## Features
 
 - **Capacity Management**: The parking lot has a total capacity of 700 cars.
@@ -72,6 +66,12 @@ The system effectively manages parking by accurately tracking the number of cars
 - Integrate a user interface for real-time monitoring and management.
 - Implement additional features like reservation of parking spots.
 - Enhance the system to handle a larger number of vehicles and more complex parking policies.
+
+## Related Links
+
+- [Verilog HDL](https://en.wikipedia.org/wiki/Verilog)
+- [ModelSim](https://www.mentor.com/products/fv/modelsim/)
+- [Intel Quartus Prime](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html)
 
 ## Contributors
 
