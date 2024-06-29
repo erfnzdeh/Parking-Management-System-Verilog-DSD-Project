@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This project is part of the Digital System Design course under the supervision of Dr. Foshati. It aims to design and implement a robust university parking management system, providing efficient and real-time monitoring of parking spaces. This system distinguishes between university-affiliated and non-university vehicles, ensuring optimal use of the available parking capacity. The project is developed using Verilog and implemented on an FPGA to leverage its high performance and reliability in managing digital circuits.
+This project is part of the Digital System Design course under the supervision of [Amin Fos'hati](https://scholar.google.com/citations?user=R6Ny-hUAAAAJ&hl=en). It aims to design and implement a robust university parking management system, providing efficient and real-time monitoring of parking spaces. This system distinguishes between university-affiliated and non-university vehicles, ensuring optimal use of the available parking capacity. The project is developed using Verilog and implemented on an FPGA to leverage its high performance and reliability in managing digital circuits.
 
 [CLICK HERE TO READ PERSIAN REPORT](https://github.com/erfnzdeh/DSD-Project/blob/main/Report_Persian_DSD_Project_401011180.pdf)
 
