@@ -37,16 +37,7 @@ The system effectively manages parking by accurately tracking the number of cars
 - [ModelSim](https://www.mentor.com/products/fv/modelsim/)
 - [Intel Quartus Prime](https://www.intel.com/content/www/us/en/software/programmable/quartus-prime/overview.html)
 
-## Authors
-
-- [Pourya Erfanzadeh](https://github.com/erfnzdeh)
-
-
-
-
-
-
-### Features
+## Features
 
 - **Capacity Management**: The parking lot has a total capacity of 700 cars.
   - From 8 AM to 1 PM, 200 spaces are available for entry.
@@ -54,9 +45,9 @@ The system effectively manages parking by accurately tracking the number of cars
 - **Vehicle Differentiation**: The system can distinguish between university and non-university vehicles.
 - **Real-Time Monitoring**: Tracks the number of university vehicles parked, vacated spaces, and entries/exits.
 
-### Inputs and Outputs
+## Inputs and Outputs
 
-#### Outputs
+### Outputs
 
 | Outputs              | Description                                              |
 | -------------------- | -------------------------------------------------------- |
@@ -67,7 +58,7 @@ The system effectively manages parking by accurately tracking the number of cars
 | uni_is_vacated_space | Is there a vacated space for the university?             |
 | is_vacated_space     | Is there a vacated space for available capacity?         |
 
-#### Inputs
+### Inputs
 
 | Inputs             | Description                                   |
 | ------------------ | --------------------------------------------- |
@@ -76,27 +67,15 @@ The system effectively manages parking by accurately tracking the number of cars
 | car_exited         | Car exit                                      |
 | is_uni_car_exited  | Is the exited car related to the university?  |
 
-### Implementation
-
-The project is designed using Verilog and implemented on an FPGA to ensure accurate and real-time management of parking resources. The FPGA implementation is chosen for its reliability and performance in handling digital circuits.
-
-### Usage
-
-1. **Compilation**: Compile the Verilog code using a suitable compiler.
-2. **Simulation**: Simulate the design to verify functionality using testbenches.
-3. **Synthesis**: Synthesize the design for FPGA implementation.
-4. **Programming**: Program the FPGA with the synthesized design.
-5. **Testing**: Test the implementation in a controlled environment to ensure proper operation.
-
-### Future Enhancements
+## Future Enhancements
 
 - Integrate a user interface for real-time monitoring and management.
 - Implement additional features like reservation of parking spots.
 - Enhance the system to handle a larger number of vehicles and more complex parking policies.
 
-### Contributors
+## Contributors
 
-- Pourya Erfanzadeh | 401011180
+- [Pourya Erfanzadeh](https://github.com/erfnzdeh)
 
 <!-- # Question
 
